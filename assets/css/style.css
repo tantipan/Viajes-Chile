@@ -1,5 +1,6 @@
 body{
   background: #000000;
+  font-family: 'Open Sans', sans-serif;
 }
 body{
   margin: 0;
@@ -13,6 +14,7 @@ body{
   background: none !important;
   border: 0 !important;
   border-radius: 0 !important;
+
 }
 
 
@@ -25,12 +27,23 @@ nav a{
   margin-top: -60px;
 }
 
-/* Secciones */
+/* Linea Separadora de Secciones */
 hr {
   color: #5bc0de;
   background-color: #5bc0de;
   height: 1px;
   width:100%;
+}
+
+/* Titulos Secciones */
+h2 {
+  font-weight: 400;
+
+}
+
+/* Parrafos */
+p {
+  font-weight: 300;
 }
 
 /* Tarjetas */
@@ -45,14 +58,10 @@ hr {
 }
 
 /* Footer */
-footer {
-  /* padding: 10px; */
+footer{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
-
-/* footer i {
-  margin: 0 0.25em 0.5em 0.25em;
-} */
 footer a{
   color: #ffffff;
-  /* text-decoration: none; */
 }

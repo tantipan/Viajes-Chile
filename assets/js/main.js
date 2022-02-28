@@ -1,5 +1,10 @@
+$('.card-title').click(function() {
+
+  $(".card-text").toggle();
+});
+
 $(document).ready(function(){
-  // Add smooth scrolling to nav-link
+  // Add smooth scrolling to all links
   $(".nav-link").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
@@ -12,9 +17,27 @@ $(document).ready(function(){
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $("html, body").animate({
+      $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800);
+      }, 1500, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
     } // End if
   });
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// $(function (){
+//       $(window).scroll(function(){
+//          if ($(this).scrollTop() > 100) {
+//           $('.my-nav').addClass("azul");
+//          } else {
+//           $(".my-nav").removeClass("azul");
+//          }
+//       });
+//   });
