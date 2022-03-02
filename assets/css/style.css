@@ -8,23 +8,15 @@ body{
   border: 0;
 }
 
-/* NavBar */
-.my-nav{
-  z-index: 999;
-  background: none !important;
-  border: 0 !important;
-  border-radius: 0 !important;
 
-}
-
-nav a{
-  color: white !important;
-}
 
 /* Carrusel de heder */
 .mi-carrusel{
-  margin-top: -60px;
+  width: 100%;
+  height: auto;
+  /* margin-top: -60px; */
 }
+
 
 /* Linea Separadora de Secciones */
 hr {
@@ -63,4 +55,7 @@ footer{
 }
 footer a{
   color: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
 }

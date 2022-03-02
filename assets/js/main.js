@@ -8,7 +8,7 @@ $('.card-title').click(function() {
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
-  $(".nav-link").on('click', function(event) {
+  $(".navbar.nav-item.nav-link").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
